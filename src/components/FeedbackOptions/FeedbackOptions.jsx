@@ -1,16 +1,17 @@
-import { StyledFeedbackOptions } from "./FeedbackOptions.styled";
+import { StyledFeedbackOptions } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({
-  options,
-  onLeaveFeedback,
-}) => {
+export const FeedbackOptions = ({ onLeaveFeedback }) => {
   return (
     <StyledFeedbackOptions>
-      {Object.keys(options).map(item => (
-        <button type="button" name={item} onClick={onLeaveFeedback}>
-          {item.replace(item[0], item[0].toUpperCase())}
-        </button>
-      ))}
+      <button type="button" name="Good" onClick={onLeaveFeedback}>
+        Good
+      </button>
+      <button type="button" name="Neutral" onClick={onLeaveFeedback}>
+        Neutral
+      </button>
+      <button type="button" name="Bad" onClick={onLeaveFeedback}>
+        Bad
+      </button>
     </StyledFeedbackOptions>
   );
 };

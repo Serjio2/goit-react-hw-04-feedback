@@ -4,7 +4,7 @@ export const StyledSections = styled.div`
   border: 2px solid lightgray;
   border-radius: 10px;
   margin: 30px auto;
-  width: 300px;
+  width: 350px;
 
   h2 {
     text-align: center;

@@ -5,10 +5,10 @@ export const StyledStatistic = styled.div`
 
 span {
     display: inline-block;
-    width: 90px;
-    margin: 3px;
+    width: 100px;
+    margin: 5px;
     border: 2px solid grey;
-    padding: 5px;
+    padding: 10px 0;
 }
 
 span:first-of-type {

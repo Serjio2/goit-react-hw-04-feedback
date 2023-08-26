@@ -1,17 +1,15 @@
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
+import { StyledFeedback } from './Feedback.styled';
 
-export const Feedback = ({
-  options,
-  onLeaveFeedback,
-  title,
-}) => {
+export const Feedback = ({ good, neutral, bad, onLeaveFeedback }) => {
   return (
-    <>
-      <>{title}</>
+    <StyledFeedback>
       <FeedbackOptions
-      options={options}
-      onLeaveFeedback={onLeaveFeedback}
+        good={good}
+        neutral={neutral}
+        bad={bad}
+        onLeaveFeedback={onLeaveFeedback}
       />
-    </>
+    </StyledFeedback>
   );
 };
